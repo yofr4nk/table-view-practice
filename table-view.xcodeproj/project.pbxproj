@@ -14,6 +14,7 @@
 		3CCAD20F21090E2D000D6981 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CCAD20D21090E2D000D6981 /* LaunchScreen.storyboard */; };
 		3CCAD21A21090E2D000D6981 /* table_viewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CCAD21921090E2D000D6981 /* table_viewTests.swift */; };
 		3CCAD22521090E2D000D6981 /* table_viewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CCAD22421090E2D000D6981 /* table_viewUITests.swift */; };
+		3CCAD233210D6399000D6981 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CCAD232210D6399000D6981 /* CustomCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		3CCAD22021090E2D000D6981 /* table-viewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "table-viewUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CCAD22421090E2D000D6981 /* table_viewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = table_viewUITests.swift; sourceTree = "<group>"; };
 		3CCAD22621090E2D000D6981 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3CCAD232210D6399000D6981 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				3CCAD20421090E2B000D6981 /* AppDelegate.swift */,
 				3CCAD20621090E2B000D6981 /* ViewController.swift */,
+				3CCAD232210D6399000D6981 /* CustomCell.swift */,
 				3CCAD20821090E2B000D6981 /* Main.storyboard */,
 				3CCAD20B21090E2D000D6981 /* Assets.xcassets */,
 				3CCAD20D21090E2D000D6981 /* LaunchScreen.storyboard */,
@@ -257,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3CCAD20721090E2B000D6981 /* ViewController.swift in Sources */,
+				3CCAD233210D6399000D6981 /* CustomCell.swift in Sources */,
 				3CCAD20521090E2B000D6981 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
