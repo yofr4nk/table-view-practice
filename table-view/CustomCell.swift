@@ -13,7 +13,6 @@ class CustomCell: UITableViewCell {
     @IBOutlet weak var titleSection: UILabel!;
     
     @IBOutlet weak var subTiSect: UILabel!
-    @IBOutlet weak var earthImg: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()

@@ -15,6 +15,7 @@
 		3CCAD21A21090E2D000D6981 /* table_viewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CCAD21921090E2D000D6981 /* table_viewTests.swift */; };
 		3CCAD22521090E2D000D6981 /* table_viewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CCAD22421090E2D000D6981 /* table_viewUITests.swift */; };
 		3CCAD233210D6399000D6981 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CCAD232210D6399000D6981 /* CustomCell.swift */; };
+		3CCAD239210E73E9000D6981 /* DetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CCAD238210E73E9000D6981 /* DetailController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		3CCAD22421090E2D000D6981 /* table_viewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = table_viewUITests.swift; sourceTree = "<group>"; };
 		3CCAD22621090E2D000D6981 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3CCAD232210D6399000D6981 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		3CCAD238210E73E9000D6981 /* DetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				3CCAD20B21090E2D000D6981 /* Assets.xcassets */,
 				3CCAD20D21090E2D000D6981 /* LaunchScreen.storyboard */,
 				3CCAD21021090E2D000D6981 /* Info.plist */,
+				3CCAD238210E73E9000D6981 /* DetailController.swift */,
 			);
 			path = "table-view";
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3CCAD239210E73E9000D6981 /* DetailController.swift in Sources */,
 				3CCAD20721090E2B000D6981 /* ViewController.swift in Sources */,
 				3CCAD233210D6399000D6981 /* CustomCell.swift in Sources */,
 				3CCAD20521090E2B000D6981 /* AppDelegate.swift in Sources */,

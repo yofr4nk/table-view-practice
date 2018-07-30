@@ -8,10 +8,11 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITableViewDataSource {
+class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     let data:[[String]] = [["Yofrank", "Alejandra"], ["Peru", "Argentina", "Chile", "EEUU", "Aruba", "Curazao"]];
     let groupTitles:[String] = ["Names", "Travels"];
     let subs:[[String]] = [["Sanchez", "Caraballo"], ["Lima", "Mendoza", "Santiago", "Georgia", "Palm Beach", "Cabana"]];
+    var selectedRowName:String = "";
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return data[section].count;
@@ -25,16 +26,23 @@ class ViewController: UIViewController, UITableViewDataSource {
         return groupTitles[section];
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        selectedRowName = data[indexPath.section][indexPath.row];
+        self.performSegue(withIdentifier: "showDetail", sender: nil);
+        
+    }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! CustomCell;
         cell.titleSection.text = data[indexPath.section][indexPath.row];
         cell.subTiSect.text = subs[indexPath.section][indexPath.row];
-        if (indexPath.section == 0) {
-            cell.earthImg.isHidden = true;
-        }
         return cell;
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let detail = segue.destination as! DetailController
+        detail.descriptionText = selectedRowName;
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
