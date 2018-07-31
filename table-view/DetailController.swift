@@ -9,8 +9,8 @@
 import UIKit
 
 class DetailController: UIViewController {
-    @IBOutlet weak var labelDescriptionDetail: UILabel!;
     var descriptionText:String?;
+    @IBOutlet weak var nameDescription: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,7 +26,7 @@ class DetailController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated);
         if let getTextDescription = descriptionText {
-            labelDescriptionDetail.text = getTextDescription;
+            nameDescription.text = getTextDescription;
         }
     }
     
